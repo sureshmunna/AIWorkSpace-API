@@ -32,7 +32,9 @@ public class ClaudeSettings
 public class ModeSettings
 {
     /// <summary>"Local" = in-memory users (works offline). "Supabase" = real Supabase Auth.</summary>
-    public string Auth { get; set; } = "Local";
+    //public string Auth { get; set; } = "Local";
+    public string Auth { get; set; } = "Supabase";
     /// <summary>"Memory" = lost on restart. "Mongo" = persisted in MongoDB Atlas.</summary>
-    public string Storage { get; set; } = "Memory";
+    //public string Storage { get; set; } = "Memory";
+    public string Storage { get; set; } = "Mongo";
 }
